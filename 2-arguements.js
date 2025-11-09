@@ -1,7 +1,9 @@
-let arguement0 = "No arguement"
-let arguement1 = "Arguement found"
-let otherwise = "Arguements found"
+const args = process.argv.slice(2);
 
-console.log(arguement0)
-console.log(arguement1)
-console.log(otherwise)
+if (args.length === 0) {console.log("No arguement");
+}
+else if (args.length === 1) {console.log("Arguement found");
+}
+else {
+console.log("Arguements found");
+}
